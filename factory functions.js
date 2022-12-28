@@ -2,7 +2,10 @@ function criarPessoa (nome, idade, sexo) {
   return {
     nome,
     idade,
-    sexo
+    sexo,
+    ligar(){
+      console.log('fazendo ligação!')
+    }
   }
 }
 
