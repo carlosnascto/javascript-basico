@@ -1,4 +1,4 @@
-function criarPessoa (nome, idade, sexo) {
+function criarPessoa(nome, idade, sexo) {
   return {
     nome,
     idade,
