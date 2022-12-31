@@ -4,7 +4,7 @@ const notebook = {
   modelo: 'vostro'
 }
 
-notebook.tamanho = 'médio';
-delete notebook.tamanho;
+notebook.tamanho = 'médio'; //inserindo
+delete notebook.tamanho; //excluindo
 
 console.log(notebook);
