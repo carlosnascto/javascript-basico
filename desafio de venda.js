@@ -1,7 +1,7 @@
 const venda = {
-    dataVenda: new Date("2022-12-15"),
-    valorTotal: 11143.983,
-    numeroParcelas: 8,
+    dataVenda: new Date("2022-11-13"),
+    valorTotal: 1000.500,
+    numeroParcelas: 12,
 }
 
 function calcularParcelas(venda) {
