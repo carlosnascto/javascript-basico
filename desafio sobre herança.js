@@ -10,8 +10,8 @@ class Pessoa {
 }
 
 class Homem extends Pessoa {
-  constructor(nome, idade, sexo) {
-    super(nome, idade, sexo);
+  constructor(nome, idade) {
+    super(nome, idade, 'masculino');
   }
 
   saudacao() {
@@ -20,8 +20,8 @@ class Homem extends Pessoa {
 }
 
 class Mulher extends Pessoa {
-  constructor(nome, idade, sexo) {
-    super(nome, idade, sexo);
+  constructor(nome, idade) {
+    super(nome, idade, 'feminino');
   }
 
   saudacao() {
@@ -30,17 +30,20 @@ class Mulher extends Pessoa {
 }
 
 class Filho extends Pessoa {
-  constructor(nome, idade, mae) {
+  constructor(nome, idade, pai, mae) {
     super(nome, idade);
-    this.mae = new Mulher();
+    this.mae = mae;
+    this.pai = pai;
   }
 
 
   saudacao() {
-    console.log('Olá, sou filho!');
+    console.log(`Olá, sou filho do Sr.${this.pai.nome} da Sra.${this.mae.nome}`);
   }
 }
 
-let filho = new Filho('igor', 14);
+let pai = new Homem('Augusto', 34);
+let mae = new Mulher('Catarina', 29);
+let filho = new Filho('Mateus', 14, pai, mae);
 filho.saudacao();
 
