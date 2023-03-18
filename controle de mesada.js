@@ -1,6 +1,5 @@
 let mesada = 50;
 
-
 function valorAleatorio(n1, n2){
   return Math.floor(Math.random() * (n2 - n1 + 1)) + n1
 }
@@ -15,4 +14,4 @@ while(mesada > 0){
 }
 
 console.log("Mesada: " + mesada);
-console.log("João gastou toda a sua mesada em doces");
+console.log("Anya gastou toda a sua mesada em doces");
