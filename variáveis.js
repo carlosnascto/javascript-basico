@@ -1,5 +1,5 @@
 let nome = 'Carlos Henrique';
 let idade = 16;
-let altura = 165;
+let altura = 1.65;
 
-console.log(nome, idade, altura);
+console.log(`Olá, sou ${nome}! Tenho ${idade} anos e minha altura é ${altura}m.`);
